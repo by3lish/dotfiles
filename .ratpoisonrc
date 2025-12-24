@@ -1,0 +1,14 @@
+escape Alt_L
+bind M-p exec dmenu_run
+bind M-f exec firefox
+bind S-M-Return exec st
+bind M-L exec ~/toggle_layout.sh
+definekey top XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+definekey top XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+definekey top XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+definekey top XF86MonBrightnessUp exec light -A 10
+definekey top XF86MonBrightnessDown exec light -U 10
+definekey top Prior exec light -A 10
+definekey top Next exec light -U 10
+definekey top Print exec flameshot gui
+bind M-C delete
